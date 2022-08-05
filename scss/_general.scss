@@ -1,0 +1,54 @@
+/*GENERAL*/
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a,
+button,
+input,
+textarea,
+select,
+option{
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+body{
+    font-family:'Karla', 'DM Serif Display', sans-serif;
+    background-color: #FFFFFF;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+@mixin btn {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;   
+    padding: 15px 30px;
+}
+@mixin important {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+$main_color: #2D2641;
+$text_color: #837D88;
+$important-color: #2C2830;
+$white: #FFFFFF;

@@ -1,0 +1,56 @@
+.about{
+    background-color: $main_color;
+    position: relative;
+    margin-bottom: 150px;
+}
+.about__body{
+    @include important;
+}
+.about__title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;  
+    letter-spacing: -0.777778px;    
+    color: $white;
+    max-width: 475px;
+    padding: 70px 0;
+}
+.about__link{
+    @include btn;
+    border: 1.5px solid $white;
+    color: $white;
+}
+.about__link:active{
+    background-color: #fff;
+    color: $important-color;
+}
+.about__img{
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+}
+@media screen and (max-width: 375px) {
+    .about__body{
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+    .about__img{
+        display: none;
+    }
+    .about__title{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 280px;
+    }
+    .about__link{
+        margin-bottom: 70px;
+        padding: 10px 20px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+    }
+}

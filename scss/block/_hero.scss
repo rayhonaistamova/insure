@@ -1,0 +1,95 @@
+.hero{
+    background-color: $main_color;
+    padding-top: 105px;
+    position: relative;
+    height: 600px;
+}
+.hero__body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero__hr{
+    width: 150px;
+}
+.hero__left{
+    max-width: 540px;
+}
+.hero__title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: $white;
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+.hero__text{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;   
+    color: $white;
+    margin-bottom: 40px;
+}
+.hero__btn{
+    @include btn;
+    border: 1.5px solid $white;
+    color: $white;
+}
+.hero__btn:active{
+    background-color: $white;
+    color: $important-color;
+}
+.hero__img{
+    position: absolute;
+    bottom: -450px;
+}
+.hero__img-two{
+    position: absolute;
+    right: 0;
+    bottom: 37px;
+}
+@media screen and (max-width: 375px) {
+    .container{
+        padding: 0;
+    }
+    .hero{
+        padding-top: 0;
+        padding-bottom: 105px;
+        height: auto;
+    }
+    .hero__body{
+        flex-direction: column-reverse;
+
+    }
+    .hero__left{
+        text-align: center;
+    }
+    .hero__hr{
+        display: none;
+    }
+    .hero-img{
+        width: 100%;
+        
+    }
+    .hero__title{
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .hero__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .hero__img{
+        display: none;
+    }
+    .hero__img-two{
+        display: none;
+    }
+}
